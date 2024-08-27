@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Downtime Tracker</title>
+</head>
+<body>
+    <header>
+        <h1>Machine Downtime Tracker</h1>
+        <h3>Please fill the form below</h3>
+    </header>
+    <main>
+        <h2>Shift:</h2>
+        <select id="shift-option">
+            <option value="1">Shift 1</option>
+            <option value="2">Shift 2</option>
+        </select>
+        <h2>Machine:</h2>
+        <select id="machine-option">
+            <option value="1">Machine 1</option>
+            <option value="2">Machine 2</option>
+        </select>
+        <h2>Category:</h2>
+        <select id="category-option">
+            <option value="1">Screws</option>
+            <option value="2">Caps</option>
+            <option value="3">Press 1</option>
+            <option value="4">Press 2</option>
+            <option value="5">Table</option>
+            <option value="6">Camera/Conveyor</option>
+        </select>
+        <h2>Specific Issue:</h2>
+        <div class="screws">
+            <select id="screws-option">
+                <option value="1">Screw feeding jam</option>
+                <option value="2">Screw bowl jam</option>
+                <option value="3">Screw rail jam</option>
+                <option value="4">Screw did not enter station</option>
+                <option value="5">Screw entered in sideways</option>
+                <option value="6">Screw plate jam</option>
+                <option value="7">Screw block/station jam</option>
+            </select>
+        </div>
+        <div class="caps">
+            <select id="caps-option">
+                <option value="1">Cap feeding jam</option>
+                <option value="2">Cap bowl jam</option>
+                <option value="3">Cap rail jam</option>
+                <option value="4">Cap did not enter station</option>
+                <option value="5">Cap entered in sideways</option>
+                <option value="6">Cap plate jam</option>
+                <option value="7">Cap block/station jam</option>
+            </select>
+        </div>
+        <div class="press-1">
+            <select id="press-1-option">
+                <option value="1">Press 1 jam</option>
+                <option value="2">Press 1 fault</option>
+            </select>
+        </div>
+        <div class="press-2">
+            <select id="press-2-option">
+                <option value="1">Press 2 jam</option>
+                <option value="2">Press 2 fault</option>
+            </select>
+        </div>
+        <div class="table">
+            <select id="table-option">
+                <option value="1">Table not turning</option>
+                <option value="2">Table not in position</option>
+            </select>
+        </div>
+        <div class="camera-conveyor">
+            <select id="camera-conveyor-option">
+                <option value="1">Catcher jam</option>
+                <option value="2">Conveyor jam</option>
+                <option value="3">Camera fault</option>
+                <option value="4">Pusher jam</option>
+            </select>
+        </div>
+        <h2>Machine downtime:</h2>
+        <input id="hours-down" type="number" min="0" max="24" step="1" />
+        <span>hours</span>
+        <input id="minutes-down" type="number" min="0" max="60" step="1" />
+        <span>minutes</span>
+        <h2>Comments:</h2>
+        <textarea id="comments" rows="4" cols="50" placeholder="Enter machine issue comments"></textarea>
+        <div class="submit-form">
+            <button type="submit">Submit</button>
+        </div>
+    </main>
+</body>
+</html>
