@@ -1,0 +1,65 @@
+
+h2 {
+    color: var(--text);
+    margin-top: 20px;
+}
+
+h3, span {
+    color: var(--text);
+}
+
+h3{
+    font-style: italic;
+}
+
+body {
+    background-color: var(--primary);
+    background-size: 100vh;
+    text-align: center;
+}
+
+.form-custom {
+    width: 50%;
+    margin: 0px auto;
+}
+
+select {
+    cursor: pointer;
+}
+
+
+.caps, .press-1, .press-2, .table, .camera-conveyor {
+    display: none;
+}
+
+.downtime {
+    margin-left: 50px;
+}
+.form-custom-1 {
+    display: inline;
+    width: 12%;
+    margin: 5px auto;
+    padding: 0px 10px;
+    line-height: 3;
+}
+
+span{
+    font-size: 20px;
+}
+
+.form-custom-2 {
+    width: 50%;
+    margin: 15px auto;
+    margin-top: 10px;
+}
+
+.btn-custom {
+    color: var(--text);
+    margin: 20px auto;
+    width: 50%;
+    box-shadow: var(--bs-box-shadow) !important;
+}
+
+.form-custom, .form-custom-1, .form-custom-2 {
+    box-shadow: var(--bs-box-shadow) !important;
+}

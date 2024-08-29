@@ -1,0 +1,24 @@
+:root{
+    --text: #ffffff;
+    --primary: #4682B4; 
+    --secondary: #003366; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-custom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--secondary);
+  }
+
+h1 {
+    color: var(--text);
+}
