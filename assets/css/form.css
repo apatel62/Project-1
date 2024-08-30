@@ -21,7 +21,6 @@ select {
     cursor: pointer;
 }
 
-
 .caps, .press-1, .press-2, .table, .camera-conveyor {
     display: none;
 }
