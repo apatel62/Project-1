@@ -17,8 +17,14 @@
     justify-content: center;
     text-align: center;
     background-color: var(--secondary);
-  }
+}
 
 h1 {
     color: var(--text);
+}
+
+body {
+    background-color: var(--primary);
+    background-size: 100vh;
+    text-align: center;
 }

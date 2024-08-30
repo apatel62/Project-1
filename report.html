@@ -10,18 +10,19 @@
     <link rel="stylesheet" href="./assets/css/report.css" />
 </head>
 <body>
-    <header> 
+    <header class ="navbar navbar-expand-md navbar-dark sticky-top navbar-custom-1"> 
         <h1>Shift Downtime Report</h1>
-        <button type="back">Back</button>
+        <nav > 
+          <a href="javascript:void(0);" class="back" onclick="">⬅ Back</a>  
+        </nav>
+
     </header>
     <main>
         <div class="machine-1">
-            <table id="machine-1-table">
-                <thead>
-                    <th>
-                        <td colspan="3">Machine 1</td>
-                    </th>
-                </thead>
+            <table id="machine-1-table" class="table table-bordered table-custom">
+                <tr>
+                    <td colspan="3">Machine 1</td>
+                </tr>
                 <tr>
                     <td>Specific issue</td>
                     <td>Time down (HH:mm)</td>
@@ -35,12 +36,10 @@
             </table>
         </div>
         <div class="machine-2">
-            <table id="machine-2-table">
-                <thead>
-                    <th>
-                        <td colspan="3">Machine 2</td>
-                    </th>
-                </thead>
+            <table id="machine-2-table" class="table table-bordered table-custom">
+                <tr>
+                    <td colspan="3">Machine 2</td>
+                </tr>
                 <tr>
                     <td>Specific issue</td>
                     <td>Time down (HH:mm)</td>
