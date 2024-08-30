@@ -21,10 +21,6 @@ select {
     cursor: pointer;
 }
 
-.caps, .press-1, .press-2, .table, .camera-conveyor {
-    display: none;
-}
-
 .downtime {
     margin-left: 50px;
 }
@@ -55,4 +51,12 @@ span{
 
 .form-custom, .form-custom-1, .form-custom-2 {
     box-shadow: var(--bs-box-shadow) !important;
+}
+
+.machine, .category, .specific-issue, .machine-downtime, .comments-button {
+    display: none;
+}
+
+.screws, .caps, .press-1, .press-2, .table, .camera-conveyor {
+    display: none;
 }

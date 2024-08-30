@@ -21,87 +21,99 @@
             <option value="1">Shift 1</option>
             <option value="2">Shift 2</option>
         </select>
-        <h2>Machine:</h2>
-        <select id="machine-option" class="form-select form-select-lg mb-3 form-custom" aria-label=".form-select-lg example">
-            <option value="0" disabled selected class="select-placeholder">Select machine</option>
-            <option value="1">Machine 1</option>
-            <option value="2">Machine 2</option>
-        </select>
-        <h2>Category:</h2>
-        <select id="category-option" class="form-select form-select-lg mb-3 form-custom" aria-label=".form-select-lg example">
-            <option value="0" disabled selected class="select-placeholder">Select category</option>
-            <option value="1">Screws</option>
-            <option value="2">Caps</option>
-            <option value="3">Press 1</option>
-            <option value="4">Press 2</option>
-            <option value="5">Table</option>
-            <option value="6">Camera/Conveyor</option>
-        </select>
-        <h2>Specific Issue:</h2>
-        <div class="screws">
-            <select id="screws-option" class="form-select form-select-lg mb-3 form-custom" aria-label=".form-select-lg example">
-                <option value="0" disabled selected class="select-placeholder">Select specific issue</option>
-                <option value="1">Screw feeding jam</option>
-                <option value="2">Screw bowl jam</option>
-                <option value="3">Screw rail jam</option>
-                <option value="4">Screw did not enter station</option>
-                <option value="5">Screw entered in sideways</option>
-                <option value="6">Screw plate jam</option>
-                <option value="7">Screw block/station jam</option>
+        <div class="machine">
+            <h2>Machine:</h2> 
+            <select id="machine-option" class="form-select form-select-lg mb-3 form-custom" aria-label=".form-select-lg example">
+                <option value="0" disabled selected class="select-placeholder">Select machine</option>
+                <option value="1">Machine 1</option>
+                <option value="2">Machine 2</option>
             </select>
         </div>
-        <div class="caps">
-            <select id="caps-option" class="form-select form-select-lg mb-3 form-custom" aria-label=".form-select-lg example">
-                <option value="0" disabled selected class="select-placeholder">Select specific issue</option>
-                <option value="1">Cap feeding jam</option>
-                <option value="2">Cap bowl jam</option>
-                <option value="3">Cap rail jam</option>
-                <option value="4">Cap did not enter station</option>
-                <option value="5">Cap entered in sideways</option>
-                <option value="6">Cap plate jam</option>
-                <option value="7">Cap block/station jam</option>
+        <div class="category">
+            <h2>Category:</h2>
+            <select id="category-option" class="form-select form-select-lg mb-3 form-custom" aria-label=".form-select-lg example">
+                <option value="0" disabled selected class="select-placeholder">Select category</option>
+                <option value="1">Screws</option>
+                <option value="2">Caps</option>
+                <option value="3">Press 1</option>
+                <option value="4">Press 2</option>
+                <option value="5">Table</option>
+                <option value="6">Camera/Conveyor</option>
             </select>
         </div>
-        <div class="press-1">
-            <select id="press-1-option" class="form-select form-select-lg mb-3 form-custom" aria-label=".form-select-lg example">
-                <option value="0" disabled selected class="select-placeholder">Select specific issue</option>
-                <option value="1">Press 1 jam</option>
-                <option value="2">Press 1 fault</option>
-            </select>
+        <div class="specific-issue">
+            <h2>Specific Issue:</h2>
+            <div class="screws">
+                <select id="screws-option" class="form-select form-select-lg mb-3 form-custom" aria-label=".form-select-lg example">
+                    <option value="0" disabled selected class="select-placeholder">Select specific issue</option>
+                    <option value="1">Screw feeding jam</option>
+                    <option value="2">Screw bowl jam</option>
+                    <option value="3">Screw rail jam</option>
+                    <option value="4">Screw did not enter station</option>
+                    <option value="5">Screw entered in sideways</option>
+                    <option value="6">Screw plate jam</option>
+                    <option value="7">Screw block/station jam</option>
+                </select>
+            </div>
+            <div class="caps">
+                <select id="caps-option" class="form-select form-select-lg mb-3 form-custom" aria-label=".form-select-lg example">
+                    <option value="0" disabled selected class="select-placeholder">Select specific issue</option>
+                    <option value="1">Cap feeding jam</option>
+                    <option value="2">Cap bowl jam</option>
+                    <option value="3">Cap rail jam</option>
+                    <option value="4">Cap did not enter station</option>
+                    <option value="5">Cap entered in sideways</option>
+                    <option value="6">Cap plate jam</option>
+                    <option value="7">Cap block/station jam</option>
+                </select>
+            </div>
+            <div class="press-1">
+                <select id="press-1-option" class="form-select form-select-lg mb-3 form-custom" aria-label=".form-select-lg example">
+                    <option value="0" disabled selected class="select-placeholder">Select specific issue</option>
+                    <option value="1">Press 1 jam</option>
+                    <option value="2">Press 1 fault</option>
+                </select>
+            </div>
+            <div class="press-2">
+                <select id="press-2-option" class="form-select form-select-lg mb-3 form-custom" aria-label=".form-select-lg example">
+                    <option value="0" disabled selected class="select-placeholder">Select specific issue</option>
+                    <option value="1">Press 2 jam</option>
+                    <option value="2">Press 2 fault</option>
+                </select>
+            </div>
+            <div class="table">
+                <select id="table-option" class="form-select form-select-lg mb-3 form-custom" aria-label=".form-select-lg example">
+                    <option value="0" disabled selected class="select-placeholder">Select specific issue</option>
+                    <option value="1">Table not turning</option>
+                    <option value="2">Table not in position</option>
+                </select>
+            </div>
+            <div class="camera-conveyor">
+                <select id="camera-conveyor-option" class="form-select form-select-lg mb-3 form-custom" aria-label=".form-select-lg example">
+                    <option value="0" disabled selected class="select-placeholder">Select specific issue</option>
+                    <option value="1">Catcher jam</option>
+                    <option value="2">Conveyor jam</option>
+                    <option value="3">Camera fault</option>
+                    <option value="4">Pusher jam</option>
+                </select>
+            </div>
         </div>
-        <div class="press-2">
-            <select id="press-2-option" class="form-select form-select-lg mb-3 form-custom" aria-label=".form-select-lg example">
-                <option value="0" disabled selected class="select-placeholder">Select specific issue</option>
-                <option value="1">Press 2 jam</option>
-                <option value="2">Press 2 fault</option>
-            </select>
+        <div class="machine-downtime">
+            <h2>Machine downtime:</h2>
+            <div class="downtime">
+                <input id="hours-down" type="number" class="form-control form-custom-1" min="0" max="24" step="1" />
+                <span>hours</span>
+                <input id="minutes-down" type="number"  class="form-control form-custom-1" min="0" max="60" step="1" />
+                <span>minutes</span>
+            </div>
         </div>
-        <div class="table">
-            <select id="table-option" class="form-select form-select-lg mb-3 form-custom" aria-label=".form-select-lg example">
-                <option value="0" disabled selected class="select-placeholder">Select specific issue</option>
-                <option value="1">Table not turning</option>
-                <option value="2">Table not in position</option>
-            </select>
+        <div class="comments-button">
+            <h2>Comments:</h2>
+            <textarea id="comments" class="form-control form-custom-2" rows="3" cols="50" placeholder="Any additonal comments..."></textarea>
+            <button type="submit" class="btn btn-success btn-lg btn-block btn-custom">Submit</button>
         </div>
-        <div class="camera-conveyor">
-            <select id="camera-conveyor-option" class="form-select form-select-lg mb-3 form-custom" aria-label=".form-select-lg example">
-                <option value="0" disabled selected class="select-placeholder">Select specific issue</option>
-                <option value="1">Catcher jam</option>
-                <option value="2">Conveyor jam</option>
-                <option value="3">Camera fault</option>
-                <option value="4">Pusher jam</option>
-            </select>
-        </div>
-        <h2>Machine downtime:</h2>
-        <div class="downtime">
-            <input id="hours-down" type="number" class="form-control form-custom-1" min="0" max="24" step="1" />
-            <span>hours</span>
-            <input id="minutes-down" type="number"  class="form-control form-custom-1" min="0" max="60" step="1" />
-            <span>minutes</span>
-        </div>
-        <h2>Comments:</h2>
-        <textarea id="comments" class="form-control form-custom-2" rows="3" cols="50" placeholder="Any additonal comments..."></textarea>
-        <button type="submit" class="btn btn-success btn-lg btn-block btn-custom">Submit</button>
     </main>
+
+    <script src="./assets/js/form.js"> </script>
 </body>
 </html>
