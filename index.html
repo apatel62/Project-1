@@ -4,22 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Machine Downtime Tracker</title>
+    <!--Links the Boostrap CSS framework along with our stylesheets-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/form.css" />
 </head>
 <body>
+    <!--Header element that has the form title and description-->
     <header id="headnav" class="navbar navbar-expand-md navbar-dark sticky-top navbar-custom">
         <h1 class="navbar-nav mx-auto">Machine Downtime Tracker</h1>
         <h3>Please fill the form below</h3>
     </header>
+    <!--Main content where the form questions are presented-->
     <main class="flex-shrink-0">
-        <h2 >Shift:</h2>    
+        <h2 >Shift:</h2>
+        <!--Shift select question-->    
         <select id="shift-option" class="form-select form-select-lg mb-3 form-custom" aria-label=".form-select-lg example">
             <option value="0" disabled selected class="select-placeholder">Select shift</option>
             <option value="1">Shift 1</option>
             <option value="2">Shift 2</option>
         </select>
+        <!--Machine select question--> 
         <div class="machine">
             <h2>Machine:</h2> 
             <select id="machine-option" class="form-select form-select-lg mb-3 form-custom" aria-label=".form-select-lg example">
@@ -28,6 +33,7 @@
                 <option value="2">Machine 2</option>
             </select>
         </div>
+        <!--Category select question--> 
         <div class="category">
             <h2>Category:</h2>
             <select id="category-option" class="form-select form-select-lg mb-3 form-custom" aria-label=".form-select-lg example">
@@ -40,8 +46,10 @@
                 <option value="camera-conveyor">Camera/Conveyor</option>
             </select>
         </div>
+        <!--Specific Issue select question--> 
         <div class="specific-issue">
             <h2>Specific Issue:</h2>
+            <!--Screws question--> 
             <div id="screws" class="issues">
                 <select id="screws-option" class="form-select form-select-lg mb-3 form-custom" aria-label=".form-select-lg example">
                     <option value="0" disabled selected class="select-placeholder">Select specific issue</option>
@@ -54,6 +62,7 @@
                     <option value="7">Screw block/station jam</option>
                 </select>
             </div>
+            <!--Caps question--> 
             <div id="caps" class="issues">
                 <select id="caps-option" class="form-select form-select-lg mb-3 form-custom" aria-label=".form-select-lg example">
                     <option value="0" disabled selected class="select-placeholder">Select specific issue</option>
@@ -66,6 +75,7 @@
                     <option value="7">Cap block/station jam</option>
                 </select>
             </div>
+            <!--Press 1 question--> 
             <div id="press-1" class="issues">
                 <select id="press-1-option" class="form-select form-select-lg mb-3 form-custom" aria-label=".form-select-lg example">
                     <option value="0" disabled selected class="select-placeholder">Select specific issue</option>
@@ -73,6 +83,7 @@
                     <option value="2">Press 1 fault</option>
                 </select>
             </div>
+            <!--Press 2 question--> 
             <div id="press-2" class="issues">
                 <select id="press-2-option" class="form-select form-select-lg mb-3 form-custom" aria-label=".form-select-lg example">
                     <option value="0" disabled selected class="select-placeholder">Select specific issue</option>
@@ -80,6 +91,7 @@
                     <option value="2">Press 2 fault</option>
                 </select>
             </div>
+            <!--Table question--> 
             <div id="table" class="issues">
                 <select id="table-option" class="form-select form-select-lg mb-3 form-custom" aria-label=".form-select-lg example">
                     <option value="0" disabled selected class="select-placeholder">Select specific issue</option>
@@ -87,6 +99,7 @@
                     <option value="2">Table not in position</option>
                 </select>
             </div>
+            <!--Camera conveyor question--> 
             <div id="camera-conveyor" class="issues">
                 <select id="camera-conveyor-option" class="form-select form-select-lg mb-3 form-custom" aria-label=".form-select-lg example">
                     <option value="0" disabled selected class="select-placeholder">Select specific issue</option>
@@ -97,6 +110,7 @@
                 </select>
             </div>
         </div>
+        <!--Machine downtime question--> 
         <div class="machine-downtime">
             <h2>Machine downtime:</h2>
             <div class="downtime">
@@ -106,12 +120,15 @@
                 <span>minutes</span>
             </div>
         </div>
+        <!--Comments & submit button questions--> 
         <div class="comments-button">
             <h2>Comments:</h2>
             <textarea id="comments" class="form-control form-custom-2" rows="3" cols="50" placeholder="Any additonal comments..."></textarea>
             <button type="submit" class="btn btn-success btn-lg btn-block btn-custom">Submit</button>
         </div>
     </main>
+    <!--Boostrap modals-->
+    <!--No specifc issue selected modal-->  
     <div class="modal fade" id="checkModal" tabindex="-1" aria-labelledby="validationModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -127,6 +144,7 @@
             </div>
         </div>
     </div>
+    <!--No machine downtime entered modal--> 
     <div class="modal fade" id="numberModal" tabindex="-1" aria-labelledby="validationModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -142,6 +160,7 @@
             </div>
         </div>
     </div>
+    <!--Incorrect time entered in machine downtime modal--> 
     <div class="modal fade" id="timeModal" tabindex="-1" aria-labelledby="validationModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -157,6 +176,7 @@
             </div>
         </div>
     </div>
+    <!--Success filling out form modal--> 
     <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="validationModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -164,16 +184,31 @@
                     <h5 class="modal-title text-white" id="validationModalLabel">Success!</h5>
                 </div>
                 <div class="modal-body">
-                    <p>Thank you for filling out form! Would you like to add another time the machine was down during your shift?</p>
+                    <p>Thank you for filling out the form! Would you like to add another time the machine was down during your shift?</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-primary" id="add-extra-entryButton">Yes</button>
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+                    <button type="button" class="btn btn-secondary" id="end-shiftButton">No</button>
                 </div>
             </div>
         </div>
     </div>
-
+    <!--End of shift modal--> 
+    <div class="modal fade" id="endModal" tabindex="-1" aria-labelledby="validationModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-dark">
+                    <h5 class="modal-title text-white" id="validationModalLabel">End of shift</h5>
+                </div>
+                <div class="modal-body">
+                    <p> Press Ok to see end of shift results.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="redirectButton">Ok</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="./assets/js/logic.js"> </script>
     <script src="./assets/js/form.js"> </script>
