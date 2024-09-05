@@ -7,24 +7,25 @@ The goal was to create a machine downtime tracking website. It tracks when the m
 The inspiration came from one of Arjun’s work responsibilities. His task is to create a downtime tracking sheet, print so operators running the machines fill out the forms, enter filled out data onto Excel to store data & create graphs, relay to his engineering team which issues need to be addressed first as the aim is to keep the machine running and minimize downtime. Therefore, website will be used to streamline and automate the process of filling out and storing the downtime data.
 
 
-
 ## Installation
 
-No installaion is needed. Users must need a device that is connected to internet and that has acces to the browser.
+No installation required. 
+
 
 ## Usage
-
-Please refer to gif below
-md
+```md
+The gif below shows the web application's appearance and functionality:
+```
 ![README demo](assets/images/readme-demo.gif)
-    
 
 
 ## Credits
 
+```md
 Arjun Patel  [GitHub](https://github.com/apatel62)
 Destinee Miles  [GitHub](https://github.com/Destineeco)
 Dzenis Coragic [GitHub](https://github.com/DzenisCoragic)
+```
 
 ## License
 
@@ -56,6 +57,7 @@ SOFTWARE
 
 User story:
 
+```md
 GIVEN a downtime tracker
 WHEN I load the website
 THEN I am presented with a landing page containing a form that asks for the shift
@@ -87,4 +89,4 @@ WHEN I view the tables
 THEN I see the specific issues for each machine, the time these issues caused the machine to be down in (HH:MM) format, any comments that were included, and the total downtime the machine was down for the shift
 WHEN I view the bar graphs
 THEN I see the specific issues for each machine on the x-axis and the time these issues caused the machine to be down in (HH:MM) format on the y-axis
-
+```
