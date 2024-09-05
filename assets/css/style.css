@@ -1,3 +1,4 @@
+/*sets color styles */
 :root{
     --text: #ffffff;
     --primary: #4682B4; 
@@ -10,6 +11,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/*sets spacing between navbar and title*/
 .navbar-custom {
     display: flex;
     flex-direction: column;
