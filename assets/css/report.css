@@ -22,3 +22,9 @@
     margin-bottom: 40px;
 
   }
+
+  canvas {
+    width: 75%;
+    height: 200px;
+    background-color: var(--text);
+  }
