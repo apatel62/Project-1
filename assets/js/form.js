@@ -106,7 +106,7 @@ function timeDown () {
     
     minutes.addEventListener('input', function(event){
         minutesInput = true;
-        wholeTime[1] = minutes.value.toString();         //saves the number into the second index of wholeTime
+        wholeTime[1] = minutes.value.toString().padStart(2,'0');         //saves the number into the second index of wholeTime
         bothInput();
     });
 
@@ -163,7 +163,7 @@ function submitPress(event) {
 
     //checks to see if the user entered the hours and minutes incorrectly
     //if so then throws a modal
-    if(wholeTime[0] > 24 || wholeTime[1] > 60) {
+    if(wholeTime[0] > 24 || wholeTime[1] > 60 || isNaN(wholeTime[0]) || isNaN(wholeTime[1]) ) {
         var timeModal = new bootstrap.Modal(document.getElementById('timeModal'));
         timeModal.show();
         formErrors = true;

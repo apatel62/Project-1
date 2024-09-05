@@ -8,9 +8,7 @@
   }
   
   .back{
-    position: fixed;
-    top:15px;
-    right:10px;
+    flex: 30%;
     color: var(--text);
     font-size: 20px;
     text-decoration: none;
@@ -28,3 +26,20 @@
     height: 200px;
     background-color: var(--text);
   }
+
+    @media (max-width: 550px) {
+      .navbar-custom-1 {
+        flex-direction: column;
+      }
+    }
+
+    @media (min-width: 550px) and (max-width: 10000px) {
+      .back{
+        position: fixed;
+        top:15px;
+        right:10px;
+        color: var(--text);
+        font-size: 20px;
+        text-decoration: none;
+      }
+    }
