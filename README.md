@@ -19,6 +19,10 @@ No installation required. Users need a computer and a connection to the internet
 
 #### The video below shows the web application's appearance and functionality:
 
+
+https://github.com/user-attachments/assets/f9a036ee-6f8c-44f6-8cd3-ee9da0c86450
+
+
 #### Have a look for yourself! https://apatel62.github.io/Project-1/
 
 ## Credits
