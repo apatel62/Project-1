@@ -6,6 +6,7 @@ const title = document.querySelector('header').querySelector('h1'); //grabs h1 i
 const machine1Graph = document.getElementById('machine-1-chart');   //grabs machine 1 graph
 const machine2Graph = document.getElementById('machine-2-chart');   //grabs machine 2 graph
 
+
 //function used to sort the each machine's donwtime data from greatest to least downtime
 function sortByTime() {
     retObject(machine1Key, machine1Sorted);
@@ -93,6 +94,28 @@ function totalTime(arr, table) {
         machine2Table.appendChild(tr);
     }
 }
+
+//function that takes the machine data and combines duplicate entries
+//so the bar graph only has unique issues on the x-axis
+function graphArray(arr1) {
+    const machineObject = {};
+    arr1.forEach(({issue, time}) => {
+        const minutes = timeToMintues(time);
+        if(!machineObject[issue]) {
+            machineObject[issue] = 0;
+        }
+        machineObject[issue] += minutes;
+    });
+
+    const arr2 = Object.keys(machineObject).map(issue => ({
+        issue,
+        time: minutesToTime(machineObject[issue])
+    }));
+
+    return arr2;
+} 
+
+
 //function that creates the bar graphs using chart.js
 //takes two parameters which are the array (arr) and the machine chart id element (id)
 function createBarGraph(arr, id) {
@@ -136,8 +159,10 @@ function reportPage() {
     shiftTitle();
     totalTime(machine1Sorted, '1');
     totalTime(machine2Sorted, '2');
-    createBarGraph(machine1Sorted, machine1Graph);
-    createBarGraph(machine2Sorted, machine2Graph);
+    let machine1Chart = graphArray(machine1Sorted); //array used for creating the bar graph for machine 1
+    let machine2Chart = graphArray(machine2Sorted); //array used for creating the bar graph for machine 2
+    createBarGraph(machine1Chart, machine1Graph);
+    createBarGraph(machine2Chart, machine2Graph);
 }
 reportPage();
 //function that is used when the users press the back button in the navbar
