@@ -9,27 +9,27 @@ The inspiration came from one of Arjun’s work responsibilities. His task is to
 
 ## Installation
 
-No installation required. 
+No installation required. Users need a computer and a connection to the internet. 
 
 
 ## Usage
 ```md
-The gif below shows the web application's appearance and functionality:
+###### The gif below shows the web application's appearance and functionality:
 ```
 ![README demo](assets/images/readme-demo.gif)
 
 
 ## Credits
 
-```md
-Arjun Patel  [GitHub](https://github.com/apatel62)
-Destinee Miles  [GitHub](https://github.com/Destineeco)
-Dzenis Coragic [GitHub](https://github.com/DzenisCoragic)
-```
+
+<p>Arjun Patel  [Arjun's GitHub](https://github.com/apatel62)</p> <br>
+<p>Destinee Miles  [Destinee's GitHub](https://github.com/Destineeco)</p> <br>
+<p>Dzenis Coragic [Dzenis' GitHub](https://github.com/DzenisCoragic)</p>
+
 
 ## License
 
-MIT License
+##### MIT License
 
 Copyright (c) 2024 apatel62
 
