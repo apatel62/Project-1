@@ -11,7 +11,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/*sets spacing between navbar and title*/
+ /*sets spacing between navbar and title*/
 .navbar-custom {
     display: flex;
     flex-direction: column;

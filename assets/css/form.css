@@ -41,6 +41,7 @@ span{
     margin: 15px auto;
     margin-top: 10px;
 }
+
 /* !important insures that the style is always applied*/
 .btn-custom {
     color: var(--text);
@@ -52,6 +53,7 @@ span{
 .form-custom, .form-custom-1, .form-custom-2 {
     box-shadow: var(--bs-box-shadow) !important;
 }
+
 /*hides options until chosen*/
 .machine, .category, .specific-issue, .machine-downtime, .comments-button {
     display: none;

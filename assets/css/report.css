@@ -1,4 +1,4 @@
-/*sets spacing between navbar and title*/
+  /*sets spacing between navbar and title*/
 .navbar-custom-1 {
     display: flex;
     flex-direction: row;
@@ -27,7 +27,7 @@
     height: 200px;
     background-color: var(--text);
   }
-    /*adjusts spacing and position in navbar depending on screen width*/
+      /*adjusts spacing and position in navbar depending on screen width*/
     @media (max-width: 550px) {
       .navbar-custom-1 {
         flex-direction: column;
