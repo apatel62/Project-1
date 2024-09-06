@@ -42,6 +42,7 @@ span{
     margin-top: 10px;
 }
 
+/* !important insures that the style is always applied*/
 .btn-custom {
     color: var(--text);
     margin: 20px auto;
@@ -53,6 +54,7 @@ span{
     box-shadow: var(--bs-box-shadow) !important;
 }
 
+/*hides options until chosen*/
 .machine, .category, .specific-issue, .machine-downtime, .comments-button {
     display: none;
 }
@@ -60,3 +62,5 @@ span{
 .issues {
     display: none;
 }
+
+
