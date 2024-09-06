@@ -4,7 +4,10 @@
 
 The goal was to create a machine downtime tracking website. It tracks when the machine was down for a given shift, the duration, the reason why, and any comments the users would like to add.
 
-The inspiration came from one of Arjun’s work responsibilities. His task is to create a downtime tracking sheet, print so operators running the machines fill out the forms, enter filled out data onto Excel to store data & create graphs, relay to his engineering team which issues need to be addressed first as the aim is to keep the machine running and minimize downtime. Therefore, website will be used to streamline and automate the process of filling out and storing the downtime data.
+The inspiration came from one of Arjun’s work responsibilities. His task is to create a downtime tracking sheet, print it so operators running the machines can fill out the forms, enter filled out data onto Excel to store data & create graphs, relay to his engineering team which issues need to be addressed first as the aim is to keep the machine running and minimize downtime.
+
+Therefore, website will be used to streamline and automate the process of filling out and storing the downtime data.
+
 
 
 ## Installation
@@ -13,23 +16,22 @@ No installation required. Users need a computer and a connection to the internet
 
 
 ## Usage
-```md
-###### The gif below shows the web application's appearance and functionality:
-```
-![README demo](assets/images/readme-demo.gif)
 
+#### The video below shows the web application's appearance and functionality:
+
+#### Have a look for yourself! https://apatel62.github.io/Project-1/
 
 ## Credits
 
 
-<p>Arjun Patel  [Arjun's GitHub](https://github.com/apatel62)</p> <br>
-<p>Destinee Miles  [Destinee's GitHub](https://github.com/Destineeco)</p> <br>
-<p>Dzenis Coragic [Dzenis' GitHub](https://github.com/DzenisCoragic)</p>
+Arjun Patel -   [Arjun's GitHub](https://github.com/apatel62) <br>
+Destinee Miles - [Destinee's GitHub](https://github.com/Destineeco) <br>
+Dzenis Coragic - [Dzenis' GitHub](https://github.com/DzenisCoragic)
 
 
 ## License
 
-##### MIT License
+#### MIT License
 
 Copyright (c) 2024 apatel62
 
@@ -55,9 +57,9 @@ SOFTWARE
 
 ## Features
 
-User story:
+### User story:
 
-```md
+```
 GIVEN a downtime tracker
 WHEN I load the website
 THEN I am presented with a landing page containing a form that asks for the shift
