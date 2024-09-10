@@ -1,4 +1,4 @@
-# <Machine-Downtime-Tracker>
+# Machine-Downtime-Tracker
 
 ## Description
 
